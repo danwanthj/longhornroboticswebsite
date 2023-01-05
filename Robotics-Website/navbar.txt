@@ -1,0 +1,53 @@
+HTML
+
+
+
+CSS
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  font-size: 18px;
+  text-transform: uppercase;
+  position: sticky;
+  top: 0;
+}
+.logo {
+  cursor: pointer;
+  width: 60px;
+  height: auto;
+}
+.links ul {
+  list-style-type: none;
+}
+.links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+.links li a {
+  text-decoration: none;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: rgb(232, 176, 31);
+  display: inline-block;
+  position: relative;
+}
+.links li a::after {
+  content: "";
+  display: block;
+  width: 0;
+  bottom: 0;
+  position: absolute;
+	height: 4px;
+  border-radius: 1px;
+	margin-bottom: -3px;
+  margin-top: -3px;
+  margin-left: 0px;
+  margin-right: 0px;
+	background-color: rgb(232, 176, 31);
+	transition: all 0.3s ease-in 0s;
+}
+.links li a:hover::after {
+  width: 100%;
+}

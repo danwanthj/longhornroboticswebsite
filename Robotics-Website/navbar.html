@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Longhorn Robotics - FTC 13274</title>
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="favicon" href="logo.png">
+</head>
+
+<body>
+  <section class="header-navbar">
+    <nav class="navbar">
+      <div class="brand-title"><a href="index.html"><img src="logo.png"></a></div>
+      <a href="#" class="toggle-button"><i class="fa-solid fa-bars"></i></a>
+      <div class="navbar-links">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="com.html">Community</a></li>
+          <li><a href="sponsor.html">Sponsors</a></li>
+          <li><a href="abt.html">About</a></li>
+          <li><a href="rbt.html">The Robot</a></li>
+        </ul>
+      </div>
+      <div class="join-us-button">
+        <a href=""><button>Join Us</button></a>
+      </div>
+    </nav>
+  </section>
+
+  <script src="https://kit.fontawesome.com/e8dd4725b7.js" crossorigin="anonymous"></script>
+
+  <!-- Toggle Menu -->
+  <script>
+    const toggleButton = document.getElementsByClassName('toggle-button')[0];
+    const navbarLinks = document.getElementsByClassName('navbar-links')[0];
+
+    toggleButton.addEventListener('click', () => {
+      navbarLinks.classList.toggle('active');
+    });
+  </script>
+  
+</body>
+
+</html>
